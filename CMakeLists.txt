@@ -5,7 +5,9 @@ get_filename_component(problem ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 cmake_minimum_required (VERSION 3.5)
 
 # Name the project after the problem
-project(${problem} CXX)
+project(${problem} VERSION 1.0
+                   DESCRIPTION "Project for learning c++"
+                   LANGUAGES CXX)
 
 # Add all cpp and h files
 file(GLOB SRC_FILES
