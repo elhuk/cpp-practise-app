@@ -21,3 +21,17 @@ if("${CMAKE_CXX_COMPILER_ID}" MATCHES "(GNU|Clang)")
 endif()
 
 add_executable(${problem} ${SRC_FILES})
+
+add_subdirectory(external/gtest)
+
+#target_include_directories(${PROJECT_NAME} 
+#    PUBLIC external/gtest/googletest/include
+#)
+
+#target_link_directories(${PROJECT_NAME}
+#    PRIVATE external/gtest/googletest/src
+#)
+#
+#target_link_libraries(${PROJECT_NAME}
+#    gtest
+#)
